@@ -51,16 +51,15 @@
         </div>
         <span class="shadow"></span>
     </div> -->
-
     <div class="tree-container">
-        <!-- <video width="200" height="100" controls autoplay loop>
-            <source src="./video/y2mate.com - Bobby Helms  Jingle Bell Rock Lyrics_v240P.mp4" type="video/mp4">
-        </video> -->
+        <video id="myVideo" width="500" height="300" controls autoplay loop>
+            <source src="/video/y2mate.com - Bobby Helms  Jingle Bell Rock Lyrics_v240P.mp4" type="video/mp4">
+        </video>
         <!-- <iframe width="220" height="115" src="https://www.youtube.com/embed/zbYf5_S7oJo?autoplay=1&loop=1">
         </iframe> -->
-        <audio controls autoplay>
+        <!-- <audio controls autoplay>
             <source src="./music/y2mate.com - Bobby Helms  Jingle Bell Rock Lyrics.mp3" type="audio/mpeg">
-        </audio>
+        </audio> -->
         <h3>Merry Christmas</h3>
         <div class="tree">
             <div class="shadow ts-3d"></div>
@@ -120,6 +119,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        // window.onload = function () {
+        //     document.getElementById("myVideo").play();
+        // }
+        var vid = document.getElementById("myVideo");
+        $(document).ready(function () {
+            $("#myVideo").get(0).play();
+        });
+    </script>
 </body>
 
 </html>
